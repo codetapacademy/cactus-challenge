@@ -1,4 +1,14 @@
-div, p {
-  padding: 1rem;
-  margin: 1rem;
+// reset everything
+* {
+  margin: 0;
+  padding: 0;
 }
+
+// add border to #cactus-wrapper
+#cactus-wrapper {
+  margin-left: 50px;
+  border: 1px solid red;
+  width: 300px;
+  height: 400px;
+}
+@import 'cactus'

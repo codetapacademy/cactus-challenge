@@ -1,0 +1,19 @@
+$shadow-color: #e5e5e5;
+#cactus {
+    height: 250px; 
+    margin: 50px auto;
+    width: 250px;
+    // border: 1px solid blue;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // top: 0;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $shadow-color;
+    }
+}
