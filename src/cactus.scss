@@ -1,16 +1,46 @@
 $shadow-color: #e5e5e5;
+$pot-shade-0-50: #d3d3d3;
+$pot-shade-50-75: #c8c8c8;
+$pot-shade-75-100: #bdbdbd;
+$border-color: #b8860b;
+
 #cactus {
     height: 250px; 
     margin: 50px auto;
     width: 250px;
     // border: 1px solid blue;
     position: relative;
+
+    // flower pot
+    &:after {
+        border: 11px solid $border-color;
+        border-radius: 20px;
+        border-bottom-left-radius: 45% 100%;
+        border-bottom-right-radius: 45% 100%;
+        position: absolute;
+        bottom: 0;
+        content: '';
+        background: linear-gradient(
+            to right,
+            $pot-shade-0-50 0%,
+            $pot-shade-0-50 50%,
+            $pot-shade-50-75 50%,
+            $pot-shade-50-75 75%,
+            $pot-shade-75-100 75%,
+            $pot-shade-75-100 100%
+        );
+        height: 100px;
+        left: 0;
+        right: 0;
+    }
+
+    // shadow
     &:before {
         position: absolute;
         content: '';
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: -25px;
         // top: 0;
         height: 70px;
         border-radius: 50%;
