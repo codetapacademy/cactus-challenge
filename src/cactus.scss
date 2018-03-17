@@ -17,6 +17,13 @@ $dark-green: #5ee65e;
     border-radius: 50%;
 
     background: 
+        linear-gradient(
+            to right,
+            transparent,
+            transparent 55%,
+            rgba(0, 0, 0, 0.1) 55%,
+            rgba(0, 0, 0, 0.1)
+        ),
         radial-gradient(
             $white-color 16%, 
             transparent 0%
@@ -30,6 +37,7 @@ $dark-green: #5ee65e;
         )
         ;
         background-size: 
+            100% 100%,
             38px 38px,
             100% 100%
         ;
